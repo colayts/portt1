@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="folio.css">
+</head>
+<body>
+    <header>
+        <h1>Disimulacion</h1>
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#footer">Contact</a>
+    </header>   
+    <section id="intro">
+        <h2>About Me</h2>
+        <p>I'm a web developer and designer. Welcome to my portfolio!</p>
+        <button id="dark-mode-toggle">Dark Mode</button>
+    </section>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A sleek portfolio site.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>A dynamic web app.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>A fun game.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 4</h3>
+        <p>A comprehensive task management application designed to help users organize their daily activities efficiently.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 5</h3>
+        <p>A sleek portfolio site.</p>
+    </div>
+    <div class="project-card">
+        <h3>Project 6</h3>
+        <p>A sleek portfolio site.</p>
+    </div>
+  </section>
+  <button id="scroll-to-top">↑</button>
+    <footer id="footer">
+        <p>Let's connect!</p>
+        <div class="social-links">
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+<Script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const scrollToTopButton = document.querySelector('#scroll-to-top');
+    
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+    });
+    window.addEventListener('scroll', () => {
+        scrollButton.style.display = window.scrollY > 100 ? 'block' : 'none';
+    });
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</Script>
+    </body>
+</html>

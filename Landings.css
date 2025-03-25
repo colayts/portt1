@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  line-height: 2.6;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/007/796/681/original/sneakers-shop-logo-design-shoes-store-sneaker-illustration-free-vector.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#header {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  top: 0;
+  width:100%;
+  
+
+}
+
+#header-img {
+  height:70px;
+ 
+}
+
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  position: absolute;
+  right: 80px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+
+
+section img{
+  width: 400px;
+  height: auto;
+  margin: 10px auto;
+}
+
+
+section h2{
+  font-size: 2.5rem;
+}
+
+
+section p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: justify;
+  font-weight: absolute;
+  font-size: 30px;
+}
+
+
+footer{
+  position: relative;
+  font-size: 20px;
+  background: #a8bedd;
+  color: #0e0f0f;
+  padding: 10px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  border-top: 5px solid #fbbf24;
+  object-fit: cover;
+}
+
+ul{
+  font-size: 25px;
+  margin: auto;
+}
+
+#img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+#email, #submit {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+}
+
+
+
+

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1f1e1e;
+    color: white;
+    padding: 20px 0px;
+    text-align: end;
+    z-index: 1000;
+    cursor: pointer;
+    
+   
+}
+
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 30px;
+    transition: all 0.1s ease;
+    font-size: 20px;
+
+}
+
+
+#navbar a:hover {
+    background: #000000;
+    color: rgb(255, 166, 0);
+}
+
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31343b;
+    color:white;
+    text-align: center;
+}
+#projects {
+    padding: 50px;
+    background: #aca1a1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.project-tile {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    background:rgb(49, 50, 51);
+    display: inline-block;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 30px;
+    
+}
+
+.project-tile a {
+    color: rgb(174, 192, 201);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-tile a:hover {
+    color: rgb(240, 102, 4);
+}
+
+footer{
+    background: #1f1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    #navbar {
+        font-size: 14px;
+    }
+    .project-tile {
+        width: 90%;
+    }
+}
